@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6BF78092989273200C45E95 /* ThakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF78082989273200C45E95 /* ThakerApp.swift */; };
+		E6BF780B2989273200C45E95 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF780A2989273200C45E95 /* MainPage.swift */; };
+		E6BF780D2989273300C45E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BF780C2989273300C45E95 /* Assets.xcassets */; };
+		E6BF78102989273300C45E95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BF780F2989273300C45E95 /* Preview Assets.xcassets */; };
+		E6BF781A2989273300C45E95 /* ThakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF78192989273300C45E95 /* ThakerTests.swift */; };
+		E6BF78242989273300C45E95 /* ThakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF78232989273300C45E95 /* ThakerUITests.swift */; };
+		E6BF78262989273300C45E95 /* ThakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF78252989273300C45E95 /* ThakerUITestsLaunchTests.swift */; };
+		E6BF7833298927B300C45E95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF7832298927B300C45E95 /* SplashScreen.swift */; };
+		E6BF7922298E656200C45E95 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF7921298E656200C45E95 /* Header.swift */; };
+		E6BF7924298E78AD00C45E95 /* AthkariSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF7923298E78AD00C45E95 /* AthkariSection.swift */; };
+		E6BF7926298E78C500C45E95 /* Random_ThkrSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF7925298E78C500C45E95 /* Random_ThkrSection.swift */; };
+		E6BF7928298E78E300C45E95 /* CounterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF7927298E78E300C45E95 /* CounterSection.swift */; };
+		E6CC23802996923D0040BA8F /* rectangleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC237F2996923D0040BA8F /* rectangleBase.swift */; };
+		E6CC23822996D8A90040BA8F /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC23812996D8A90040BA8F /* Setting.swift */; };
+		E6CC23882997A5490040BA8F /* Athkari_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC23872997A5490040BA8F /* Athkari_Model.swift */; };
+		E6CC238A2997AB9C0040BA8F /* Athkari_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC23892997AB9C0040BA8F /* Athkari_viewModel.swift */; };
+		E6CC238C2997BE770040BA8F /* Thaker_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC238B2997BE770040BA8F /* Thaker_List.swift */; };
+		E6CC238E2997C7C30040BA8F /* AthkarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6BF78162989273300C45E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BF77FD2989273200C45E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BF78042989273200C45E95;
+			remoteInfo = Thaker;
+		};
+		E6BF78202989273300C45E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6BF77FD2989273200C45E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BF78042989273200C45E95;
+			remoteInfo = Thaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6BF78052989273200C45E95 /* Thaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BF78082989273200C45E95 /* ThakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThakerApp.swift; sourceTree = "<group>"; };
+		E6BF780A2989273200C45E95 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		E6BF780C2989273300C45E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6BF780F2989273300C45E95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6BF78152989273300C45E95 /* ThakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BF78192989273300C45E95 /* ThakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThakerTests.swift; sourceTree = "<group>"; };
+		E6BF781F2989273300C45E95 /* ThakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BF78232989273300C45E95 /* ThakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThakerUITests.swift; sourceTree = "<group>"; };
+		E6BF78252989273300C45E95 /* ThakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6BF7832298927B300C45E95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		E6BF7834298932AC00C45E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6BF7921298E656200C45E95 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		E6BF7923298E78AD00C45E95 /* AthkariSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkariSection.swift; sourceTree = "<group>"; };
+		E6BF7925298E78C500C45E95 /* Random_ThkrSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_ThkrSection.swift; sourceTree = "<group>"; };
+		E6BF7927298E78E300C45E95 /* CounterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSection.swift; sourceTree = "<group>"; };
+		E6CC237F2996923D0040BA8F /* rectangleBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rectangleBase.swift; sourceTree = "<group>"; };
+		E6CC23812996D8A90040BA8F /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		E6CC23872997A5490040BA8F /* Athkari_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athkari_Model.swift; sourceTree = "<group>"; };
+		E6CC23892997AB9C0040BA8F /* Athkari_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athkari_viewModel.swift; sourceTree = "<group>"; };
+		E6CC238B2997BE770040BA8F /* Thaker_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thaker_List.swift; sourceTree = "<group>"; };
+		E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarCategory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6BF78022989273200C45E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF78122989273300C45E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF781C2989273300C45E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6BF77FC2989273200C45E95 = {
+			isa = PBXGroup;
+			children = (
+				E6BF78072989273200C45E95 /* Thaker */,
+				E6BF78182989273300C45E95 /* ThakerTests */,
+				E6BF78222989273300C45E95 /* ThakerUITests */,
+				E6BF78062989273200C45E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6BF78062989273200C45E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF78052989273200C45E95 /* Thaker.app */,
+				E6BF78152989273300C45E95 /* ThakerTests.xctest */,
+				E6BF781F2989273300C45E95 /* ThakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6BF78072989273200C45E95 /* Thaker */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF7834298932AC00C45E95 /* Info.plist */,
+				E6BF78082989273200C45E95 /* ThakerApp.swift */,
+				E6CC23852996D90A0040BA8F /* Model */,
+				E6CC23862996D91A0040BA8F /* View_Model */,
+				E6CC23832996D8AF0040BA8F /* View */,
+				E6BF780C2989273300C45E95 /* Assets.xcassets */,
+				E6BF780E2989273300C45E95 /* Preview Content */,
+			);
+			path = Thaker;
+			sourceTree = "<group>";
+		};
+		E6BF780E2989273300C45E95 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF780F2989273300C45E95 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6BF78182989273300C45E95 /* ThakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF78192989273300C45E95 /* ThakerTests.swift */,
+			);
+			path = ThakerTests;
+			sourceTree = "<group>";
+		};
+		E6BF78222989273300C45E95 /* ThakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF78232989273300C45E95 /* ThakerUITests.swift */,
+				E6BF78252989273300C45E95 /* ThakerUITestsLaunchTests.swift */,
+			);
+			path = ThakerUITests;
+			sourceTree = "<group>";
+		};
+		E6CC23832996D8AF0040BA8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF7832298927B300C45E95 /* SplashScreen.swift */,
+				E6BF780A2989273200C45E95 /* MainPage.swift */,
+				E6CC23812996D8A90040BA8F /* Setting.swift */,
+				E6CC23842996D8CB0040BA8F /* SubViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6CC23842996D8CB0040BA8F /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF7921298E656200C45E95 /* Header.swift */,
+				E6CC237F2996923D0040BA8F /* rectangleBase.swift */,
+				E6CC238B2997BE770040BA8F /* Thaker_List.swift */,
+				E6BF7923298E78AD00C45E95 /* AthkariSection.swift */,
+				E6BF7925298E78C500C45E95 /* Random_ThkrSection.swift */,
+				E6BF7927298E78E300C45E95 /* CounterSection.swift */,
+				E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		E6CC23852996D90A0040BA8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6CC23872997A5490040BA8F /* Athkari_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6CC23862996D91A0040BA8F /* View_Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6CC23892997AB9C0040BA8F /* Athkari_viewModel.swift */,
+			);
+			path = View_Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6BF78042989273200C45E95 /* Thaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BF78292989273300C45E95 /* Build configuration list for PBXNativeTarget "Thaker" */;
+			buildPhases = (
+				E6BF78012989273200C45E95 /* Sources */,
+				E6BF78022989273200C45E95 /* Frameworks */,
+				E6BF78032989273200C45E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thaker;
+			productName = Thaker;
+			productReference = E6BF78052989273200C45E95 /* Thaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6BF78142989273300C45E95 /* ThakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BF782C2989273300C45E95 /* Build configuration list for PBXNativeTarget "ThakerTests" */;
+			buildPhases = (
+				E6BF78112989273300C45E95 /* Sources */,
+				E6BF78122989273300C45E95 /* Frameworks */,
+				E6BF78132989273300C45E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BF78172989273300C45E95 /* PBXTargetDependency */,
+			);
+			name = ThakerTests;
+			productName = ThakerTests;
+			productReference = E6BF78152989273300C45E95 /* ThakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6BF781E2989273300C45E95 /* ThakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BF782F2989273300C45E95 /* Build configuration list for PBXNativeTarget "ThakerUITests" */;
+			buildPhases = (
+				E6BF781B2989273300C45E95 /* Sources */,
+				E6BF781C2989273300C45E95 /* Frameworks */,
+				E6BF781D2989273300C45E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BF78212989273300C45E95 /* PBXTargetDependency */,
+			);
+			name = ThakerUITests;
+			productName = ThakerUITests;
+			productReference = E6BF781F2989273300C45E95 /* ThakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6BF77FD2989273200C45E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E6BF78042989273200C45E95 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E6BF78142989273300C45E95 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E6BF78042989273200C45E95;
+					};
+					E6BF781E2989273300C45E95 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E6BF78042989273200C45E95;
+					};
+				};
+			};
+			buildConfigurationList = E6BF78002989273200C45E95 /* Build configuration list for PBXProject "Thaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6BF77FC2989273200C45E95;
+			productRefGroup = E6BF78062989273200C45E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6BF78042989273200C45E95 /* Thaker */,
+				E6BF78142989273300C45E95 /* ThakerTests */,
+				E6BF781E2989273300C45E95 /* ThakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6BF78032989273200C45E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BF78102989273300C45E95 /* Preview Assets.xcassets in Resources */,
+				E6BF780D2989273300C45E95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF78132989273300C45E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF781D2989273300C45E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6BF78012989273200C45E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CC238E2997C7C30040BA8F /* AthkarCategory.swift in Sources */,
+				E6BF7924298E78AD00C45E95 /* AthkariSection.swift in Sources */,
+				E6BF7928298E78E300C45E95 /* CounterSection.swift in Sources */,
+				E6BF7926298E78C500C45E95 /* Random_ThkrSection.swift in Sources */,
+				E6BF7922298E656200C45E95 /* Header.swift in Sources */,
+				E6BF7833298927B300C45E95 /* SplashScreen.swift in Sources */,
+				E6BF780B2989273200C45E95 /* MainPage.swift in Sources */,
+				E6CC23882997A5490040BA8F /* Athkari_Model.swift in Sources */,
+				E6CC238A2997AB9C0040BA8F /* Athkari_viewModel.swift in Sources */,
+				E6BF78092989273200C45E95 /* ThakerApp.swift in Sources */,
+				E6CC23802996923D0040BA8F /* rectangleBase.swift in Sources */,
+				E6CC238C2997BE770040BA8F /* Thaker_List.swift in Sources */,
+				E6CC23822996D8A90040BA8F /* Setting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF78112989273300C45E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BF781A2989273300C45E95 /* ThakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6BF781B2989273300C45E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BF78242989273300C45E95 /* ThakerUITests.swift in Sources */,
+				E6BF78262989273300C45E95 /* ThakerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6BF78172989273300C45E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BF78042989273200C45E95 /* Thaker */;
+			targetProxy = E6BF78162989273300C45E95 /* PBXContainerItemProxy */;
+		};
+		E6BF78212989273300C45E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BF78042989273200C45E95 /* Thaker */;
+			targetProxy = E6BF78202989273300C45E95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E6BF78272989273300C45E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6BF78282989273300C45E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6BF782A2989273300C45E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Thaker/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thaker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ذكِر";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.Thaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6BF782B2989273300C45E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Thaker/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thaker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ذكِر";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.Thaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6BF782D2989273300C45E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.ThakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thaker";
+			};
+			name = Debug;
+		};
+		E6BF782E2989273300C45E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.ThakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thaker";
+			};
+			name = Release;
+		};
+		E6BF78302989273300C45E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.ThakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thaker;
+			};
+			name = Debug;
+		};
+		E6BF78312989273300C45E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RZ5V4846A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dana.ThakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6BF78002989273200C45E95 /* Build configuration list for PBXProject "Thaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BF78272989273300C45E95 /* Debug */,
+				E6BF78282989273300C45E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BF78292989273300C45E95 /* Build configuration list for PBXNativeTarget "Thaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BF782A2989273300C45E95 /* Debug */,
+				E6BF782B2989273300C45E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BF782C2989273300C45E95 /* Build configuration list for PBXNativeTarget "ThakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BF782D2989273300C45E95 /* Debug */,
+				E6BF782E2989273300C45E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6BF782F2989273300C45E95 /* Build configuration list for PBXNativeTarget "ThakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BF78302989273300C45E95 /* Debug */,
+				E6BF78312989273300C45E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6BF77FD2989273200C45E95 /* Project object */;
+}
