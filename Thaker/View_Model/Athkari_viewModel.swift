@@ -218,7 +218,7 @@ extension Thaker{
             Category: "Morning",
             Counter: 100,
             Discription: """
-سُبْحـانَ اللهِ وَبِحَمْـدِهِ.أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ
+أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ
 """),
         Thaker(
             Name:"",
