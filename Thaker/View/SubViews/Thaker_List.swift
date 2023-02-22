@@ -23,12 +23,12 @@ struct Thaker_List: View {
                                     maxWidth: .infinity,
                                     maxHeight: .infinity,
                                     alignment: .leading)
-                        }
-                        
+                        }.padding(8)
                     }
                 }
                 
             }
+            .scrollIndicators(ScrollIndicatorVisibility.hidden)
             .navigationTitle("الاذكار")
             .navigationBarItems(trailing:
                                     Button(action: {

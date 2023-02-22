@@ -70,18 +70,18 @@ struct Random_ThkrSection: View {
                                                startPoint: .top,
                                                endPoint: .bottom))
                         
-                            .frame(width: 390,height:149)
+                            .frame(width: 360,height:149)
                             .cornerRadius(14)
                             .shadow(
                                 color: colorScheme == .dark ? .white : .gray.opacity(0.4),
                                 radius: 4,
                                 x:0 ,
-                                y: 4
+                                y:4
                             )
                         
                         VStack(alignment: .center,spacing: 10){
                             Text(random_thker[Randomthker])
-                                .frame(width: 360,alignment: .trailing)
+                            .frame(width: 350,alignment: .trailing)
                                 .multilineTextAlignment(.trailing)
                                 .font(.body)
                                 .fontWeight(.regular)
@@ -98,7 +98,6 @@ struct Random_ThkrSection: View {
                                     .fontWeight(.heavy)
                                     .foregroundColor(Color(red: 0.557, green: 0.557, blue: 0.578))
                             })
-//                             padding for the text
                         }
                 }
             }

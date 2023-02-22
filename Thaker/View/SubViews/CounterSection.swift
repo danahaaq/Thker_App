@@ -27,7 +27,7 @@ struct CounterSection: View {
                             ]),
                                            startPoint: .top,
                                            endPoint: .bottom))
-                        .frame(width: 390,height:149)
+                        .frame(width: 360,height:149)
                         .cornerRadius(14)
                         .shadow(
                             color: colorScheme == .dark ? .white : .gray.opacity(0.4),
@@ -106,14 +106,12 @@ struct CounterSection: View {
                 }
             }
         }
-//        padding for the rectangle
-//        .padding(.trailing, 24)
-//        .padding(.leading, 24)
     }
     public func counterincrease(){
         counter = counter + 1
     }
 }
+
 struct CounterSection_Previews: PreviewProvider {
     static var previews: some View {
         CounterSection()

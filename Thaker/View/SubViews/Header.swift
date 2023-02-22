@@ -39,7 +39,7 @@ struct Header: View {
                     ToolbarItem(placement: .navigationBarLeading ){
                         Button(action:{
                             
-                            //Navigation link
+                            //Navigation link tp the sitting screen
                         }, label:{
                             Image(systemName: "gear")
                                 .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
@@ -51,9 +51,6 @@ struct Header: View {
                 .foregroundColor(colorScheme == .dark ? .white :
                                     Color(red: 0.2, green: 0.2, blue: 0.2))
         }
-//        .padding(.trailing, 10)
-//        .padding(.leading, 10)
-        
     }
 }
 struct Header_Previews: PreviewProvider {
@@ -61,7 +58,6 @@ struct Header_Previews: PreviewProvider {
         Header()
     }
 }
-
 // Function that get the current time of the phone and transfer oit to string Am and Pm
 func getTime() -> String {
     let formatter = DateFormatter()
