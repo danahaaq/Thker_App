@@ -19,7 +19,8 @@ struct MainPage: View {
                 //    Go to the rectangleBase Content
                 rectangleBase()
             }
-        }
+        }.navigationBarBackButtonHidden(true)
+        
     }
 }
 struct MainPage_Previews: PreviewProvider {

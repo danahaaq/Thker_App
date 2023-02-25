@@ -1,4 +1,4 @@
-//
+
 //  Header.swift
 //  Thaker
 //
@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Header: View {
     @Environment(\.colorScheme) var colorScheme
+    @State var pres = false
     var body: some View {
         NavigationView{
             VStack(alignment: .trailing){
@@ -35,15 +36,17 @@ struct Header: View {
                 }
                 
             }.padding()
-             .toolbar{
+                .toolbar{
                     ToolbarItem(placement: .navigationBarLeading ){
-                        Button(action:{
-                            
-                            //Navigation link tp the sitting screen
-                        }, label:{
+                        Button{
+                            pres = true
+                        }label:{
                             Image(systemName: "gear")
                                 .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
-                        })
+                        }.fullScreenCover(isPresented:$pres){
+                            Setting()
+                            
+                        }
                     }
                 }
                 .navigationBarItems(trailing: Text("ذِكر🌱"))
@@ -58,6 +61,7 @@ struct Header_Previews: PreviewProvider {
         Header()
     }
 }
+
 // Function that get the current time of the phone and transfer oit to string Am and Pm
 func getTime() -> String {
     let formatter = DateFormatter()
