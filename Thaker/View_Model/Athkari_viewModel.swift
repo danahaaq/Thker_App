@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension Thaker{
-    static let thker = [
+final class ViewModel: ObservableObject{
+    @Published var thker = [
         
         //اذكار الصباح
         Thaker(
@@ -998,7 +998,4 @@ extension Thaker{
 مامن عبد يذنب ذنباً فيحسـن الطهور ثم يقوم فيصلي ركعتين ، ثم يستغــفــر الله إلا غفر له
 """)
     ]
-}
-private class Thaker_ViewModel: ObservableObject {
-    @Published var ThakerVar: [Thaker] = Thaker.thker
 }

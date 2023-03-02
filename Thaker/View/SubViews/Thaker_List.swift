@@ -9,12 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Thaker_List: View {
-    
-    @StateObject fileprivate var viewModel = Thaker_morningViewModel()
+    @StateObject var viewModel = ViewModel()
     @Binding var isPresented: Bool
     var body: some View {
         NavigationView{
-            List(viewModel.Thakerused) { thakerused in
+            List(viewModel.thker) { thakerused in
                 if thakerused.Name != ""{
                     NavigationLink(destination: AthkarCategory(title: thakerused.Category)){
                         HStack{

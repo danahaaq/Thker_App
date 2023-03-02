@@ -8,14 +8,14 @@ import Foundation
 import SwiftUI
 
 struct AthkarCategory: View {
-    @StateObject fileprivate var viewModel = Thaker_morningViewModel()
+    @StateObject var viewModel = ViewModel()
     var title :String
     @Environment(\.dismiss) var dismiss
     @State var pres = false
     var body: some View {
         NavigationView(){
             VStack{
-                List(viewModel.Thakerused) { thakerused in
+                List(viewModel.thker) { thakerused in
                     if thakerused.Category == title{
                         Text("\(thakerused.Discription)")
                             .multilineTextAlignment(.trailing)

@@ -8,13 +8,8 @@
 import Foundation
 import SwiftUI
 
-public class Thaker_morningViewModel: ObservableObject {
-  @Published var Thakerused: [Thaker] = Thaker.thker
-
-}
 struct AthkariSection: View {
     @Environment(\.colorScheme) var colorScheme
-    @StateObject fileprivate var viewModel = Thaker_morningViewModel()
     @State private var isPresented = false
     @State private var ispressed2 = false
     @State private var ispressed3 = false
