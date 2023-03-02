@@ -11,6 +11,7 @@ import SwiftUI
 struct CounterSection: View {
     @State var counter : Int = 0
     @Environment(\.colorScheme) var colorScheme
+  
     var body: some View {
         VStack(alignment: .trailing,spacing: 10){
             Text("المسبحة")
