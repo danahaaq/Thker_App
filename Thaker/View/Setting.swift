@@ -25,6 +25,7 @@ struct Setting: View {
     var body: some View {
         NavigationView{
             VStack{
+                // Future work: Add Share button 
                 Form{
                     Section("التنبيهات"){
                         // Notification
