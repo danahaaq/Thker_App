@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E684514A29B2B0DE003C7DC6 /* Read_Future_work in Resources */ = {isa = PBXBuildFile; fileRef = E684514929B2B0DE003C7DC6 /* Read_Future_work */; };
 		E6BF78092989273200C45E95 /* ThakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF78082989273200C45E95 /* ThakerApp.swift */; };
 		E6BF780B2989273200C45E95 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF780A2989273200C45E95 /* MainPage.swift */; };
 		E6BF780D2989273300C45E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BF780C2989273300C45E95 /* Assets.xcassets */; };
@@ -25,7 +26,6 @@
 		E6CC238A2997AB9C0040BA8F /* Athkari_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC23892997AB9C0040BA8F /* Athkari_viewModel.swift */; };
 		E6CC238C2997BE770040BA8F /* Thaker_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC238B2997BE770040BA8F /* Thaker_List.swift */; };
 		E6CC238E2997C7C30040BA8F /* AthkarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */; };
-		E6DDA7D129AFBB4E00DDFF88 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7D029AFBB4E00DDFF88 /* ColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E684514929B2B0DE003C7DC6 /* Read_Future_work */ = {isa = PBXFileReference; lastKnownFileType = text; path = Read_Future_work; sourceTree = "<group>"; };
 		E6BF78052989273200C45E95 /* Thaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BF78082989273200C45E95 /* ThakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThakerApp.swift; sourceTree = "<group>"; };
 		E6BF780A2989273200C45E95 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		E6CC23892997AB9C0040BA8F /* Athkari_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athkari_viewModel.swift; sourceTree = "<group>"; };
 		E6CC238B2997BE770040BA8F /* Thaker_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thaker_List.swift; sourceTree = "<group>"; };
 		E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarCategory.swift; sourceTree = "<group>"; };
-		E6DDA7D029AFBB4E00DDFF88 /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 			children = (
 				E6BF7834298932AC00C45E95 /* Info.plist */,
 				E6BF78082989273200C45E95 /* ThakerApp.swift */,
+				E684514929B2B0DE003C7DC6 /* Read_Future_work */,
 				E6CC23852996D90A0040BA8F /* Model */,
 				E6CC23862996D91A0040BA8F /* View_Model */,
 				E6CC23832996D8AF0040BA8F /* View */,
@@ -176,7 +177,6 @@
 				E6BF7925298E78C500C45E95 /* Random_ThkrSection.swift */,
 				E6BF7927298E78E300C45E95 /* CounterSection.swift */,
 				E6CC238D2997C7C30040BA8F /* AthkarCategory.swift */,
-				E6DDA7D029AFBB4E00DDFF88 /* ColorButton.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -301,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E684514A29B2B0DE003C7DC6 /* Read_Future_work in Resources */,
 				E6BF78102989273300C45E95 /* Preview Assets.xcassets in Resources */,
 				E6BF780D2989273300C45E95 /* Assets.xcassets in Resources */,
 			);
@@ -330,7 +331,6 @@
 				E6CC238E2997C7C30040BA8F /* AthkarCategory.swift in Sources */,
 				E6BF7924298E78AD00C45E95 /* AthkariSection.swift in Sources */,
 				E6BF7928298E78E300C45E95 /* CounterSection.swift in Sources */,
-				E6DDA7D129AFBB4E00DDFF88 /* ColorButton.swift in Sources */,
 				E6BF7926298E78C500C45E95 /* Random_ThkrSection.swift in Sources */,
 				E6BF7922298E656200C45E95 /* Header.swift in Sources */,
 				E6BF7833298927B300C45E95 /* SplashScreen.swift in Sources */,

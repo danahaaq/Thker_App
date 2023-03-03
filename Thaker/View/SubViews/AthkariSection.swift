@@ -165,6 +165,10 @@ struct AthkariSection: View {
         }
     }
 }
+// future work:
+// - Allow the user to add it's own shortcut
+// - Allow the user to delete shortcut
+
 struct AthkariSection_Previews: PreviewProvider {
     static var previews: some View {
         AthkariSection()

@@ -14,33 +14,57 @@ struct AthkarCategory: View {
     @State var pres = false
     var body: some View {
         NavigationView(){
-            VStack{
-                List(viewModel.thker) { thakerused in
-                    if thakerused.Category == title{
+            List(viewModel.thker) { thakerused in
+                if thakerused.Category == "Morning"{
+                    VStack(alignment: .center,spacing: 15){
                         Text("\(thakerused.Discription)")
-                            .multilineTextAlignment(.trailing)
-                        Text("\(thakerused.Counter)")
-                    }
-                }
-            }.toolbar{
-                ToolbarItem(placement: .navigationBarLeading ){
-                    Button{
-                        pres = true
-                    }label:{
-                       Text("عودة")
-                            .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
-                    }.fullScreenCover(isPresented:$pres){
-                        MainPage()
+                            .multilineTextAlignment(.leading)
+                            .frame(width: 360.0, height: 130.0)
                         
+                        Button{
+                            let element = viewModel.thker.firstIndex{$0.id == thakerused.id
+                            }!
+                            if viewModel.thker[element].Counter != 0{
+                                viewModel.thker[element].Counter -= 1
+                            }
+                        }label:{
+                            ZStack{
+                                Circle()
+                                    .frame(width: 100,height: 100)
+                                    .foregroundColor(.gray)
+                                Circle()
+                                    .frame(width: 80,height: 80)
+                                    .foregroundColor(.white)
+                                
+                                Text("\(thakerused.Counter)")
+                                    .foregroundColor(.black)
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                            }
+                        }
                     }
-                    
                 }
-            }
+            }.scrollIndicators(ScrollIndicatorVisibility.hidden)
+            .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing ){
+                        Button{
+                            pres = true
+                        }label:{
+                            Text("عودة")
+                                .foregroundColor(.blue)
+                        }.fullScreenCover(isPresented:$pres){
+                            MainPage()
+                        }
+                    }
+                }
             // يخفي حق صفحه AthkarCategory
         }.navigationBarBackButtonHidden(true)
+         .environment(\.layoutDirection, .rightToLeft)
     }
 }
-
+// Future work:
+// Modifie the design of the screen
+// Add resest button
 struct AthkarCategory_Previews: PreviewProvider {
     static var previews: some View {
         AthkarCategory(title: "")

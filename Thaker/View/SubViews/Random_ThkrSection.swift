@@ -41,15 +41,13 @@ struct Random_ThkrSection: View {
         "لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلُّ شَيْءِ قَدِيرِ.",
         "الْلَّهُم صَلِّ وَسَلِم وَبَارِك عَلَى سَيِّدِنَا مُحَمَّد",
         "سُبْحَانَ الْلَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا الْلَّهُ، وَالْلَّهُ أَكْبَ",
-     "الْحَمْدُ لِلَّهِ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ.",
+        "الْحَمْدُ لِلَّهِ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ.",
         "اللهم رحمتك أرجو فلا تكلني إلى نفسي طرفة عين وأصلح لي شأني كله ، لا إله إلا أنت",
         "لا إله إلا أنت سبحانك إني كنت من الظالمين",
         "الله الله رب لا أشرك به شيئا",
         "اللهم اكفنى بحلالك عن حرامك وأغننى بفضلك عمن سواك",
         "اللهم إني أ عوذ بك أن أشرك بك وأنا أعلم ، وأستغفرك لما لا أعلم",
         "رب اغفر لي وتب عليّ إنك أنت التواب الغفور",
-        
-        
     ].shuffled()
     @State var Randomthker = Int.random(in: 0...21)
     var body: some View {
@@ -59,49 +57,49 @@ struct Random_ThkrSection: View {
                     .frame(width: 360,alignment: .trailing)
                     .font(Font.custom("RussoOne-Regular", size: 24))
                     .foregroundColor(colorScheme == .dark ? .white : Color(red: 0.2, green: 0.2, blue: 0.2))
-                   
-                    ZStack{
-                        Rectangle()
-                            .fill(
-                                LinearGradient(gradient: Gradient(colors: [
-                                    Color(red: 0.079, green: 0.526, blue: 0.631),
-                                    Color.white,
-                                ]),
-                                               startPoint: .top,
-                                               endPoint: .bottom))
-                        
-                            .frame(width: 360,height:149)
-                            .cornerRadius(14)
-                            .shadow(
-                                color: colorScheme == .dark ? .white : .gray.opacity(0.4),
-                                radius: 4,
-                                x:0 ,
-                                y:4
-                            )
-                        
-                        VStack(alignment: .center,spacing: 10){
-                            Text(random_thker[Randomthker])
+                
+                ZStack{
+                    Rectangle()
+                        .fill(
+                            LinearGradient(gradient: Gradient(colors: [
+                                Color(red: 0.079, green: 0.526, blue: 0.631),
+                                Color.white,
+                            ]),
+                                           startPoint: .top,
+                                           endPoint: .bottom))
+                    
+                        .frame(width: 360,height:149)
+                        .cornerRadius(14)
+                        .shadow(
+                            color: colorScheme == .dark ? .white : .gray.opacity(0.4),
+                            radius: 4,
+                            x:0 ,
+                            y:4
+                        )
+                    
+                    VStack(alignment: .center,spacing: 10){
+                        Text(random_thker[Randomthker])
                             .frame(width: 350,alignment: .trailing)
-                                .multilineTextAlignment(.trailing)
-                                .font(.body)
-                                .fontWeight(.regular)
-                                .foregroundColor(.white)
-                                .padding(.trailing,16)
-                                .padding(.leading,5)
+                            .multilineTextAlignment(.trailing)
+                            .font(.body)
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .padding(.trailing,16)
+                            .padding(.leading,5)
                         
-                            Button(action:{
-                                Random_thker()
-                                
-                            }, label:{
-                                Image(systemName: "arrow.triangle.2.circlepath")
-                                    .font(.title)
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(Color(red: 0.557, green: 0.557, blue: 0.578))
-                            })
-                        }
+                        Button(action:{
+                            Random_thker()
+                            
+                        }, label:{
+                            Image(systemName: "arrow.triangle.2.circlepath")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color(red: 0.557, green: 0.557, blue: 0.578))
+                        })
+                    }
                 }
             }
-//            padding for the rectangle
+            //            padding for the rectangle
             .padding(.trailing, 16)
             .padding(.leading, 16)
         }
