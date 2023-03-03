@@ -25,7 +25,7 @@ struct Setting: View {
     var body: some View {
         NavigationView{
             VStack{
-                // Future work: Add Share button 
+                // Future work: Add Share button
                 Form{
                     Section("التنبيهات"){
                         // Notification
@@ -38,7 +38,7 @@ struct Setting: View {
                                 }
                         }
                         if noti_thker{
-                            Toggle("اذكار الصباح", isOn: $Morning)
+                            Toggle("اذكار الصباح والمساء", isOn: $Morning)
                                 .onChange(of: Morning) { value in
                                     scheduleLocal()
                                 }
@@ -119,12 +119,12 @@ func auth(){
 // Schedule Notification
 func scheduleLocal() {
     let notificationContent = UNMutableNotificationContent()
-    notificationContent.title = "اذكار الصباح"
-    notificationContent.body = "لا تنسى عزيزي اذكار الصباح فهي حفظ من شرور الدنيا والنفس ووسوسة الشيطان "
+    notificationContent.title = "اذكار الصباح والمساء"
+    notificationContent.body = "لا تنسى عزيزي اذكار الصباح والمساء فهي حفظ من شرور الدنيا والنفس ووسوسة الشيطان "
     notificationContent.sound = .default
     var datComp = DateComponents()
-    datComp.hour = 16
-    datComp.minute = 50
+    datComp.hour = 11
+    datComp.minute = 00
     let trigger = UNCalendarNotificationTrigger(dateMatching: datComp, repeats: true)
     let request = UNNotificationRequest(identifier: "ID", content: notificationContent, trigger: trigger)
     UNUserNotificationCenter.current().add(request) { (error : Error?) in
