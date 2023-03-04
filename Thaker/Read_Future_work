@@ -1,7 +1,11 @@
 future Work on the app:
 1- add Api for Adhan times and make it in seprate screen.
-2- Make the design Tap View
-3- Add more options in the setting screen
+2- More Language Option
+3- Make the design Tap View
+4- Add more options in the setting screen
+5- Allow the user to add it's own shortcut
+6- Allow the user to delete shortcut
+7- The user can extend the screen of the counter
 -----------------
 
 Fixes and improvement on the app:
@@ -9,11 +13,6 @@ Fixes and improvement on the app:
 - Sava the state of the toggle
 - Add multible notification per day
 - Reperat a single notification
-
-- Allow the user to add it's own shortcut
-- Allow the user to delete shortcut
-
-- The user can extend the screen of the counter
 
 ** On the AthkarCategory File
 - Modifie the design of the screen
