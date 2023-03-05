@@ -15,31 +15,37 @@ struct AthkarCategory: View {
     var body: some View {
         NavigationView(){
             List(viewModel.thker) { thakerused in
-                if thakerused.Category == "Morning"{
+                if thakerused.Category == title{
                     VStack(alignment: .center,spacing: 15){
                         Text("\(thakerused.Discription)")
                             .multilineTextAlignment(.leading)
-                            .frame(width: 360.0, height: 130.0)
-                        
-                        Button{
-                            let element = viewModel.thker.firstIndex{$0.id == thakerused.id
-                            }!
-                            if viewModel.thker[element].Counter != 0{
-                                viewModel.thker[element].Counter -= 1
-                            }
-                        }label:{
-                            ZStack{
-                                Circle()
-                                    .frame(width: 100,height: 100)
-                                    .foregroundColor(.gray)
-                                Circle()
-                                    .frame(width: 80,height: 80)
-                                    .foregroundColor(.white)
-                                
-                                Text("\(thakerused.Counter)")
-                                    .foregroundColor(.black)
-                                    .font(.title)
-                                    .fontWeight(.semibold)
+                            
+                            .frame(width: 310.0, height: 150.0)
+                        Text("\(thakerused.Counter)(مرات)")
+                            .foregroundColor(.gray)
+                            .padding(.trailing,230)
+                            
+                        HStack{
+                            Button{
+                                let element = viewModel.thker.firstIndex{$0.id == thakerused.id
+                                }!
+                                if viewModel.thker[element].Counter != 0{
+                                    viewModel.thker[element].Counter -= 1
+                                }
+                            }label:{
+                                ZStack{
+                                    Circle()
+                                        .frame(width: 100,height: 100)
+                                        .foregroundColor(.gray)
+                                    Circle()
+                                        .frame(width: 80,height: 80)
+                                        .foregroundColor(.white)
+                                    
+                                    Text("\(thakerused.Counter)")
+                                        .foregroundColor(.black)
+                                        .font(.title)
+                                        .fontWeight(.semibold)
+                                }
                             }
                         }
                     }

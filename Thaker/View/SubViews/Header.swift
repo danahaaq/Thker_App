@@ -25,7 +25,7 @@ struct Header: View {
                     Spacer()
                 }
                 else{
-                    Text("انهي يومك بأذكار المساء 🌑")
+                    Text("اختم يومك بأذكار المساء 🌑")
                         .font(.headline)
                         .fontWeight(.regular)
                         .frame(
