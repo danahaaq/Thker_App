@@ -15,12 +15,12 @@ struct AthkarCategory: View {
     var body: some View {
         NavigationView(){
             List(viewModel.thker) { thakerused in
-                if thakerused.Category == title{
+                if thakerused.Category == "Morning"{
                     VStack(alignment: .center,spacing: 15){
                         Text("\(thakerused.Discription)")
                             .multilineTextAlignment(.leading)
                             
-                            .frame(width: 310.0, height: 150.0)
+                            .frame(width: 330.0, height: 150.0)
                         Text("\(thakerused.Counter)(مرات)")
                             .foregroundColor(.gray)
                             .padding(.trailing,230)
