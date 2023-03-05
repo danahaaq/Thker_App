@@ -19,11 +19,7 @@ struct AthkarCategory: View {
                     VStack(alignment: .center,spacing: 15){
                         Text("\(thakerused.Discription)")
                             .multilineTextAlignment(.leading)
-                            .frame(width: 330.0, height: 150.0)
-                        Text("\(thakerused.Counter)(مرات)")
-                            .foregroundColor(.gray)
-                            .padding(.trailing,230)
-                            
+                            .frame(width: 330.0, height: 200.0)
                         HStack{
                             Button{
                                 let element = viewModel.thker.firstIndex{$0.id == thakerused.id
